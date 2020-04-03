@@ -270,7 +270,6 @@ export default class Home extends PureComponent {
             <Divider/>
           </List>
         </Drawer>
-
         <p>
           Custom environment variables process.env.BACKEND_URL is "
           {process.env.BACKEND_URL}"

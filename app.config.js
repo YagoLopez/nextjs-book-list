@@ -1,3 +1,4 @@
+// todo: remove comments
 export const CONFIG = {
   DB: {
     MONGODB_URI: 'mongodb+srv://yagolopez:yagolopez@cluster0-eitpi.mongodb.net/dbtest1?retryWrites=true&w=majority',

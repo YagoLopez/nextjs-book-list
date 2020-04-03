@@ -10,7 +10,7 @@
     "cypress": "npx cypress run --headed",
     "test": "run-p dev cypress"
   },
-  "keywords": [],
+  "keywords": ["nextjs", "big data", "SSR", "server-side-rendering", "mongodb"],
   "author": "yago.lopez@gmail.com",
   "license": "ISC",
   "dependencies": {
