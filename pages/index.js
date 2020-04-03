@@ -271,6 +271,15 @@ export default class Home extends PureComponent {
           </List>
         </Drawer>
 
+        <p>
+          Custom environment variables process.env.BACKEND_URL is "
+          {process.env.BACKEND_URL}"
+        </p>
+        <p>
+          Custom environment variables process.env.apiBaseUrl is "
+          {process.env.apiBaseUrl}"
+        </p>
+
         <PaginationButtons
           goRoute={goRoute} createQueryString={createQueryString} onNextPage={onNextPage} totalCount={totalCount}
           onPreviousPage={onPreviousPage} isFirstPage={isFirstPage} isLastPage={isLastPage} criteria={criteria}
