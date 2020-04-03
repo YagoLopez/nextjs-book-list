@@ -1,4 +1,3 @@
-// make readme
 import React, { PureComponent } from 'react';
 import Head from 'next/head'
 import Router from 'next/router';
@@ -64,10 +63,6 @@ export default class Home extends PureComponent {
       }
     } catch (e) {
       console.error(e);
-      throw new Error(
-        'If you are running in local mode try to change the "API_BASE_URL" to ' +
-        '"http://localhost:3000/api" in "app.config.js" to avoid CORS errors'
-      );
     }
     const {data} = result;
     return {data, totalCount: data.count, items_per_page, criteria, skip: parseInt(skip, 10)};
@@ -270,14 +265,6 @@ export default class Home extends PureComponent {
             <Divider/>
           </List>
         </Drawer>
-        <p>
-          Custom environment variables process.env.BACKEND_URL is "
-          {process.env.BACKEND_URL}"
-        </p>
-        <p>
-          Custom environment variables process.env.apiBaseUrl is "
-          {process.env.apiBaseUrl}"
-        </p>
 
         <PaginationButtons
           goRoute={goRoute} createQueryString={createQueryString} onNextPage={onNextPage} totalCount={totalCount}

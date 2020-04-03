@@ -1,10 +1,4 @@
-// const dotEnvResult = require('dotenv').config();
-
 const isProd = process.env.NODE_ENV === 'production';
-
-// if (dotEnvResult.error) {
-//   throw dotEnvResult.error
-// }
 
 module.exports = {
   webpack: (config) => {
