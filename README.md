@@ -1,4 +1,4 @@
-# Study on How to Handle Big Data
+# Investigation on How to Handle Big Data
 
 How to handle a file with hundreds of MBs of JSON data (1,000,000 records).
 
@@ -6,11 +6,11 @@ How to handle a file with hundreds of MBs of JSON data (1,000,000 records).
 
 Possible options:
 
-- Streaming the JSON file using [Node Streams](https://nodejs.org/api/stream.html#stream_stream) (**<u>Discarded:</u>** Complex and there is better ways to do it)
-- Using a database
+- To stream the JSON using [Node Streams](https://nodejs.org/api/stream.html#stream_stream) (**<u>Discarded:</u>** Complex and there are better ways to do it)
+- To use a database
 	- Since the data were in JSON format, it seemed natural to import them into a NO-SQL database like Mongodb 
 	- Where to host the data?
-		- Use [MongoDB Stitch Service](https://www.mongodb.com/cloud/stitch) (Servless Functions) (**<u>Discarded:</u>** Not complete Mongodb funcionality)
+		- Use [MongoDB Stitch Service](https://www.mongodb.com/cloud/stitch) (Servless Functions) (**<u>Discarded:</u>** Too simple. Not complete Mongodb API funcionality)
 		- Use a full-fledged MongoDB database in the cloud
 
 ## 2. Implementation Phase
