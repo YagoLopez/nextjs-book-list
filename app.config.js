@@ -5,7 +5,7 @@ export const CONFIG = {
     BOOKS_COLLECTION_NAME: 'collection3',
     DEFAULT_ITEMS_PER_PAGE: 20,
   },
-  API_BASE_URL: 'https://casumo-nextjs.now.sh/api',
+  API_BASE_URL: 'https://book-list.now.sh/api',
   // API_BASE_URL: 'http://localhost:3000/api',
   CRITERIA: {
     SORT_BY_TITLE: 'sorted-by-title',
