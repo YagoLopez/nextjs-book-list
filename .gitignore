@@ -18,7 +18,6 @@
 
 # misc
 .DS_Store
-.env*
 /.idea/
 /cypress/videos/*.mp4
 /cypress/screenshots/**
@@ -29,5 +28,3 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment Variables
-.env
-.env.build
