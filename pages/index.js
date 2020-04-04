@@ -32,9 +32,9 @@ export default class Home extends PureComponent {
 
   /**
    * This fn is executed only server-side and returns data to the client-side app
-   * It also serves as MVC controller to redirect requests to the Books Repository and finally to the endpoints
-   * @param query Object containig query parameters
-   * @returns props to the Component as a result of the endpoints queries
+   * It also works as MVC controller to redirect requests to the Books Repository and finally to the endpoints
+   * @param query Object containig request query parameters
+   * @returns props to this component containing the result of the endpoints queries
    */
   static getInitialProps = async ({query}) => {
     const criteria = query.criteria;
