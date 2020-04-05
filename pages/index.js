@@ -170,6 +170,13 @@ export default class Home extends PureComponent {
             padding-top: 15px;
             padding-bottom: 15px;
           }
+          .loading {
+            width: 100%;
+            position: absolute;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+          }
         `}</style>
 
         <Head>
@@ -193,7 +200,7 @@ export default class Home extends PureComponent {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className="title">Book List</Typography>
-            { isLoading && <Typography variant='body1'><QueryBuilderIcon/> Loading...</Typography> }
+            { isLoading && <div className="loading"><Typography variant='body1'><QueryBuilderIcon/> Loading</Typography></div> }
           </Toolbar>
         </AppBar>
 
