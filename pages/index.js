@@ -68,9 +68,9 @@ export default class Home extends PureComponent {
     return {data, totalCount: data.count, items_per_page, criteria, skip: parseInt(skip, 10)};
   };
 
-  routeChangeStart = async () => await this.setState({isLoading: true});
+  routeChangeStart = () => this.setState({isLoading: true});
 
-  routeChangeEnd = async () => await this.setState({isLoading: false});
+  routeChangeEnd = () => this.setState({isLoading: false});
 
   createQueryString = (getSkipValue, criteria) => {
     let skipValue;
@@ -180,9 +180,9 @@ export default class Home extends PureComponent {
 
           {/*Load assets asynchronously to avoid render blocking*/}
           <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                as="style" crossorigin/>
+                as="style"/>
           <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                as="style" crossorigin/>
+                as="style"/>
 
           <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
         </Head>
