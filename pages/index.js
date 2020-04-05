@@ -184,7 +184,7 @@ export default class Home extends PureComponent {
           <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons"
                 as="style"/>
 
-          <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+          <link rel="shortcut icon" type="image/jpg" href="favicon-16x16.png"/>
         </Head>
 
         <AppBar position="sticky">
