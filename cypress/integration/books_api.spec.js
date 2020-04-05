@@ -18,14 +18,14 @@ describe('Books API', () => {
   });
 
   describe('Sort books by title', () => {
-    it('should sort books by title, first page', () => {
+    it('should return first book sorted by title', () => {
       cy.request(baseUrl + '/books?skip=0&limit=20&sort=name')
         .its('body.books')
         .its('0')
         .should('contain', {_id: "5e73deb8f784cd6e442bdb13"})
     });
 
-    it('should sort books by title, last page', () => {
+    it('should return last book sorted by title', () => {
       cy.request(baseUrl + '/books?skip=999980&limit=20&sort=name')
         .its('body.books')
         .its('19')
