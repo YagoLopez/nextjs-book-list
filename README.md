@@ -67,3 +67,7 @@ npm run test
 - Due to time constrains, only `e2e` tests has been implemented because these test have priority in case of apps based in `RESTful APIs`
 - For the same reason, not all cases have been tested, but the remaining ones are similar
 - The addition of **indexes** to the database for sorting and filtering queries is very important. In other case the database will return an error caused by exceeding the maximum memory limit needed to process the number of records (1,000,000)
+
+## Audit
+
+- [Link](https://googlechrome.github.io/lighthouse/viewer/?gist=f37af7e8e43aa90e1e7239481d49a32f)
