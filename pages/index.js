@@ -179,9 +179,9 @@ export default class Home extends PureComponent {
           <meta name="description" content="Research on how to load Big Data" />
 
           {/*Load assets asynchronously to avoid render blocking*/}
-          <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+          <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" as="style" onLoad="this.onload=null;this.rel='stylesheet'"/>
           <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/></noscript>
-          <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+          <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" onLoad="this.onload=null;this.rel='stylesheet'"/>
           <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/></noscript>
 
           <link rel="shortcut icon" type="image/jpg" href="/public/favicon.ico"/>
