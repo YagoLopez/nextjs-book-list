@@ -54,7 +54,9 @@ describe('Books API', () => {
       cy.request(baseUrl + '/books?skip=0&limit=20&filter[genre]=Math')
         .its('body.books')
         .its('0')
-        .should('contain', {_id: '5e73deb8f784cd6e442ba6f1'})
+        .then(book => {
+          expect(book.author.name).to.equal('Liliana Gleichner');
+        })
     });
 
     it('should return last book filtered by Math genre', () => {
@@ -70,14 +72,18 @@ describe('Books API', () => {
       cy.request(baseUrl + '/books?skip=0&limit=20&filter[author.gender]=male')
         .its('body.books')
         .its('0')
-        .should('contain', {_id: '5e73deb8f784cd6e442ba6e8'})
+        .then(book => {
+          expect(book.author.gender).to.equal('male');
+        })
     });
 
     it('should return last book filtered by by author\'s gender', () => {
       cy.request(baseUrl + '/books?skip=499761&limit=20&filter[author.gender]=male')
         .its('body.books')
         .its('19')
-        .should('contain', {_id: '5e73dec5f784cd6e443ae90d'});
+        .then(book => {
+          expect(book.author.gender).to.equal('male');
+        })
     });
   });
 
