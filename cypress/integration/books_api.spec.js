@@ -1,6 +1,6 @@
 import {CONFIG} from "../../app.config";
 
-const baseUrl = 'https://casumo-nextjs.now.sh/api';
+const baseUrl = 'https://book-list.now.sh/api';
 
 describe('Books API', () => {
 
