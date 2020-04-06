@@ -22,6 +22,7 @@ import {CONFIG} from '../app.config';
 import {DataInfo} from "../components/DataInfo";
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import {PaginationButtons} from "../components/PaginationButtons";
+import ListAltIcon from '@material-ui/icons/ListAlt';
 
 export default class Home extends PureComponent {
 
@@ -274,6 +275,16 @@ export default class Home extends PureComponent {
                 primary="Infinite Scroll"
                 secondary="Proof of concept"
                 onClick={() => goRoute('/infinite-scroll')} />
+            </ListItem>
+            <Divider/>
+            <ListItem button>
+              <ListItemAvatar>
+                <Avatar><ListAltIcon /></Avatar>
+              </ListItemAvatar>
+              <ListItemText
+                primary="Audit"
+                onClick={() => window.location = 'https://googlechrome.github.io/lighthouse/viewer/?gist=f37af7e8e43aa90e1e7239481d49a32f'}
+              />
             </ListItem>
             <Divider/>
           </List>
