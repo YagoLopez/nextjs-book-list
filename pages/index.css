@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.menuButton {
+  margin-right: 100px;
+}
+.title {
+  flex-grow: 1;
+}
+.subtitle {
+  font-size: initial;
+}
+.MuiSvgIcon-root {
+  vertical-align: top;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* big screens */
+@media only screen and (min-width: 600px) {
+  .responsive-card {
+    width: 54%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e3e4e6;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:
+      0 2.5px 5.4px rgba(0, 0, 0, 0.042),
+      0 2.5px 24px rgba(0, 0, 0, 0.07);
+  }
+}
+.data-info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.loading {
+  width: 100%;
+  position: absolute;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}

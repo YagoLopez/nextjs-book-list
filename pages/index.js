@@ -125,13 +125,11 @@ export default class Home extends PureComponent {
 
     return (
       <div>
+
         <style jsx global>{`
           body {
             margin: 0;
             margin-bottom: 5px;
-          }
-          .menuButton: {
-            margin-right: '100px';
           }
           .title {
             flex-grow: 1;
@@ -149,7 +147,7 @@ export default class Home extends PureComponent {
             margin-top: 15px;
             margin-bottom: 15px;
           }
-          // big screens
+          /* big screens */
           @media only screen and (min-width: 600px) {
             .responsive-card {
               width: 54%;
