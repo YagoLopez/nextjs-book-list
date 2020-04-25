@@ -125,7 +125,6 @@ export default class Home extends PureComponent {
 
     return (
       <div>
-
         <style jsx global>{`
           body {
             margin: 0;
@@ -185,13 +184,8 @@ export default class Home extends PureComponent {
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="description" content="Research on how to load Big Data" />
-
-          {/*Load assets asynchronously to avoid render blocking*/}
-          <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                as="style"/>
-          <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                as="style"/>
-
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
           <link rel="shortcut icon" type="image/jpg" href="favicon-16x16.png"/>
         </Head>
 
