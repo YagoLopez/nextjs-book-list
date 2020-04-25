@@ -131,9 +131,6 @@ export default class Home extends PureComponent {
             margin: 0;
             margin-bottom: 5px;
           }
-          .menuButton: {
-            margin-right: '100px';
-          }
           .title {
             flex-grow: 1;
           }
@@ -150,7 +147,7 @@ export default class Home extends PureComponent {
             margin-top: 15px;
             margin-bottom: 15px;
           }
-          // big screens
+          /* big screens */
           @media only screen and (min-width: 600px) {
             .responsive-card {
               width: 54%;
@@ -185,13 +182,8 @@ export default class Home extends PureComponent {
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="description" content="Research on how to load Big Data" />
-
-          {/*Load assets asynchronously to avoid render blocking*/}
-          <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                as="style"/>
-          <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons"
-                as="style"/>
-
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
           <link rel="shortcut icon" type="image/jpg" href="favicon-16x16.png"/>
         </Head>
 
