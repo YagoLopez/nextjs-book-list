@@ -1,7 +1,7 @@
 ////////////////////////////////////
 // WARNING:
 // THIS IS AN INFINITE SCROLL PROOF OF CONCEPT
-// CODE IS DRAFT STATUS
+// CODE IS IN DRAFT STATUS
 ////////////////////////////////////
 
 import React, { PureComponent } from "react";
