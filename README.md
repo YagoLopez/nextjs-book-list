@@ -6,11 +6,11 @@ How to handle a file with hundreds of MBs of JSON data (1,000,000 records).
 
 Possible options:
 
-- To stream the JSON using [Node Streams](https://nodejs.org/api/stream.html#stream_stream) (**<u>Discarded:</u>** It's complex and there are better ways to do it)
+- To stream the JSON using [Node Streams](https://nodejs.org/api/stream.html#stream_stream) (**<u>Discarded:</u>** It's complex and there are easier ways to do it)
 - To use a database:
 	- Since the data were in JSON format, it seemed natural to import them into a No-SQL database like Mongodb 
 	- Where to host the data?
-		- Using [MongoDB Stitch Service](https://www.mongodb.com/cloud/stitch) (Servless Functions) (**<u>Discarded:</u>** Too simple. Not complete Mongodb API)
+		- Using [MongoDB Stitch Service](https://www.mongodb.com/cloud/stitch) (Serverless Functions) (**<u>Discarded:</u>** Too simple. Incomplete Mongodb API)
 		- Using a full-fledged MongoDB database in the cloud
 
 ## 2. Implementation Phase
@@ -64,9 +64,9 @@ npm run test
 ```
 ## Important Considerations
 
-- Due to time constrains, only `e2e` tests has been implemented because these test have priority in case of apps based in `RESTful APIs`
+- Due to time constrains, only `e2e` tests has been implemented because integration tests have priority in case of apps based in `RESTful APIs`
 - For the same reason, not all cases have been tested, but the remaining ones are similar
-- The addition of **indexes** to the database for sorting and filtering queries is very important. In other case the database will return an error caused by exceeding the maximum memory limit needed to process the number of records (1,000,000)
+- The addition of **indexes** to the database for sorting and filtering is very important. In other case the database will return an error caused by exceeding the maximum memory limit needed to process the number of records (1,000,000)
 
 ## Audit
 
@@ -74,4 +74,4 @@ npm run test
 
 
 
-[Back to top](#) ↑
+[Back to top](#)
