@@ -19,7 +19,7 @@
     "@tjoskar/react-lazyload-img": "^1.2.3",
     "axios": "^0.19.2",
     "mongodb": "^3.5.5",
-    "next": "^9.3.4",
+    "next": "^11.1.3",
     "qs": "^6.9.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
