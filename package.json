@@ -20,7 +20,7 @@
     "axios": "^0.19.2",
     "mongodb": "^3.5.5",
     "next": "^9.3.4",
-    "qs": "^6.9.3",
+    "qs": "^6.9.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-infinite-scroll-component": "^5.0.4"
